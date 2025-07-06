@@ -40,12 +40,12 @@ pip install -r requirements.txt
 ## 📥 Download data to corresponding folders
 ```
 File: data.zip
-Link: https://pan.baidu.com/s/1qCZ810ciB_bI8MzT8rhPMA
-Code: 2869
+Google Drive: https://drive.google.com/file/d/11sd4GNXLH3ZL16GB-pt20Tus3ILM2DUG/view?usp=share_link
+Baidu Cloud: https://pan.baidu.com/s/1qCZ810ciB_bI8MzT8rhPMA (Code: 2869)
 
 File: lora.zip
-Link: https://pan.baidu.com/s/1wv1hgCBTTAG07bac1IE-cA
-Code: 2869
+Google Drive: https://drive.google.com/file/d/1VJJ9ghAIlMaf3O4WnmoIBKzEmvgm1dkJ/view?usp=sharing
+Baidu Cloud: https://pan.baidu.com/s/1wv1hgCBTTAG07bac1IE-cA (Code: 2869)
 ```
 ## 🚀 Execution Steps
 ### 1. Reasoning and retrieve
