@@ -1,0 +1,63 @@
+<Instruction>
+Please imitate the following examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the given question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+<Example 1>
+Question: The Dutch-Belgian television series that \"House of Anubis\" was based on first aired in what year?
+Sub-question 1: Which Dutch-Belgian television series is based on the House of Anubis？
+To obtain the Sub-question 2, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: House of Anubis is a mystery television series developed for Nickelodeon based on the Dutch-Belgian television series "Het Huis Anubis".
+Based on the evidence, we can obtain the answer to Sub-question 1: Het Huis Anubis.
+Based on the answer to Sub-question 1, we can further generate the Sub-question 2 as follows:
+Sub-question 2: What year did Het Huis Anubis first aired?
+The Sub-questions 1 and 2 are dependent since we must first obtain the answer to Sub-question 1 before generating the Sub-question 2.
+Furthermore, answering Sub-question 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 1>
+<Example 2>
+Question: Girard city is located in a county with how many inhabitants?
+Sub-question 1: Which county is Girard city located in?
+To obtain the Sub-question 2, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Girard is a city in and the county seat of Crawford County, Kansas, United States.
+Based on the evidence, we can obtain the answer to Sub-question 1: Crawford County.
+Based on the answer to Sub-question 1, we can further generate the Sub-question 2 as follows:
+Sub-question 2: How many inhabitants are there in Crawford County?
+The Sub-questions 1 and 2 are dependent since we must first obtain the answer to Sub-question 1 before generating the Sub-question 2.
+Furthermore, answering Sub-question 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 2>
+<Example 3>
+Question: Harper's Mansion is located in a village that is located along what highway?
+Sub-question 1: Which village is Harper's Mansion located in?
+To obtain the Sub-question 2, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Harper’s Mansion is a historic homestead in Berrima, New South Wales.
+Based on the evidence, we can obtain the answer to Sub-question 1: Berrima village.
+Based on the answer to Sub-question 1, we can further generate the Sub-question 2 as follows:
+Sub-question 2: Which highway is Berrima village located along?
+The Sub-questions 1 and 2 are dependent since we must first obtain the answer to Sub-question 1 before generating the Sub-question 2.
+Furthermore, answering Sub-question 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 3>
+<Example 4>
+Question: Which state does the drug stores, of which the CEO is Warren Bryant, are located?
+Sub-question 1: Which drug store's CEO is Warren Bryant?
+To obtain the Sub-question 2, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Warren Bryant was the CEO of Longs Drugs Store Corporation out of California prior to the retail chain's acquisition by CVS/Caremark.
+Based on the evidence, we can obtain the answer to Sub-question 1: Longs Drugs Store Corporation.
+Based on the answer to Sub-question 1, we can further generate the Sub-question 2 as follows:
+Sub-question 2: Which state does the Longs Drugs Store Corporation locates in?
+The Sub-questions 1 and 2 are dependent since we must first obtain the answer to Sub-question 1 before generating the Sub-question 2.
+Furthermore, answering Sub-question 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 4>
+<Instruction>
+Please imitate the above examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the given question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+Given question:

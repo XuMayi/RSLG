@@ -1,0 +1,123 @@
+<Instruction>
+Definition of Sub-question: A Sub-question is a question that must be answered in the process of finding the answer to its parent question. In other words, obtaining the answer to the Sub-question is a necessary condition for obtaining the answer to the parent question. Note that if question A and question B are highly related, but obtaining the answer to question A is not necessary for obtaining the answer to question B, then question A is not a Sub-question of question B. For example, question A "What is the city of Incheon?" and question B "What is the symbol of Incheon?" are very related, but the answer to question A is not necessary for obtaining the answer to question B, so question A is not a Sub-question of question B.
+There are three types of questions, and their definitions are as follows:
+One-hop Question: The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+For instance, "Kahibah FC is based is what country?" is a one-hop question since it cannot be broken down into multiple smaller Sub-questions.
+Parallel Multi-hop Question: The question includes multiple independent Sub-questions, so it can be directly broken down into multiple independent Sub-questions.
+For instance, "Did LostAlone and Guster have the same number of members?" is a parallel multi-hop question, which can be directly broken down into Sub-question 1 "How many members are in LostAlone?" and Sub-question 2 "How many members are in Guster?".
+Sequential Multi-hop Question: The Sub-questions of sequential multi-hop question are dependent. If we want to generate Sub-question 2, we must first obtain the answer to Sub-question 1.
+For instance, "Girard city is located in a county with how many inhabitants?" is a sequential multi-hop question, the Sub-question 1 is "Which county is Girard city located in?". Before obtaining the Sub-questions 2 "How many inhabitants are there in Crawford County?", we must obtain the answer "Crawford County" to the Sub-question 1.
+Please identify the type for the given question based on the above definitions and the following examples.
+</Instruction>
+<Example 1>
+Question:  When was the documentary film Black Chicks Talking released?
+The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+Hence, this question is a one-hop question.
+</Example 1>
+<Example 2>
+Question: After succeeding Arnold Burns, how long did Edwin Meese remain in office?
+Sub-question 1: Who succeeded Arnold Burns?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Edwin Meese succeeded Arnold Burns as the United States Attorney General.
+Based on the evidence, we can obtain the answer to Sub-question 1: Edwin Meese.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: How long did Edwin Meese remain in office as the United States Attorney General?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 2>
+<Example 3>
+Question: Are Terry Zwigoff and Pavel Ruminov both American film directors?
+Sub-question 1: Is Terry Zwigoff an American film director?
+Sub-question 2: Is Pavel Ruminov an American film director?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 3>
+<Example 4>
+Question:  What is the ancient Roman town near Fusaro Lake?
+The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+Hence, this question is a one-hop question.
+</Example 4>
+<Example 5>
+Question: Which author was born first, Lorraine Hansberry or Sandra Gulland?
+Sub-question 1: When was Lorraine Hansberry born?
+Sub-question 2: When was Sandra Gulland born?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 5>
+<Example 6>
+Question:  Is Augie March a rock musician?
+The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+Hence, this question is a one-hop question.
+</Example 6>
+<Example 7>
+Question: What was the population in 2010 of the city where the Mount Moriah Cemetery is located?
+Sub-question 1: Where is the Mount Moriah Cemetery located?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: The Mount Moriah Cemetery is a historic cemetery in Cincinnati, Ohio.
+Based on the evidence, we can obtain the answer to Sub-question 1: Cincinnati.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: What was the population of Cincinnati in 2010?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 7>
+<Example 8>
+Question:  When was Stephen Pearcy born?
+The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+Hence, this question is a one-hop question.
+</Example 8>
+<Example 9>
+Question: Are Phacelia and Nymphaea both types of plants?
+Sub-question 1: What is the classification of Phacelia?
+Sub-question 2: What is the classification of Nymphaea?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 9>
+<Example 10>
+Question: Steve Jones and Blag Dahlia, have which occupation in common?
+Sub-question 1: What is Steve Jones's occupation?
+Sub-question 2: What is Blag Dahlia's occupation?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 10>
+<Example 11>
+Question:  Argent Corporation was a company in Las Vegas that at one time controlled a hotel that operated when?
+Sub-question 1: Which hotel in Las Vegas was controlled by Argent Corporation?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Argent Corporation was a company that controlled the Stardust Resort and Casino in Las Vegas.
+Based on the evidence, we can obtain the answer to Sub-question 1: Stardust Resort and Casino.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: When did the Stardust Resort and Casino operate?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 11>
+<Example 12>
+Question: The music for Coco was by a man born when?
+Sub-question 1: Who composed the music for Coco?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: The music for Coco was composed by Michael Giacchino.
+Based on the evidence, we can obtain the answer to Sub-question 1: Michael Giacchino.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: In what year was Michael Giacchino born?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 12>
+<Instruction>
+Definition of Sub-question: A Sub-question is a question that must be answered in the process of finding the answer to its parent question. In other words, obtaining the answer to the Sub-question is a necessary condition for obtaining the answer to the parent question. Note that if question A and question B are highly related, but obtaining the answer to question A is not necessary for obtaining the answer to question B, then question A is not a Sub-question of question B. For example, question A "What is the city of Incheon?" and question B "What is the symbol of Incheon?" are very related, but the answer to question A is not necessary for obtaining the answer to question B, so question A is not a Sub-question of question B.
+There are three types of questions, and their definitions are as follows:
+One-hop Question: The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+For instance, "Kahibah FC is based is what country?" is a one-hop question since it cannot be broken down into multiple smaller Sub-questions.
+Parallel Multi-hop Question: The question includes multiple independent Sub-questions, so it can be directly broken down into multiple independent Sub-questions.
+For instance, "Did LostAlone and Guster have the same number of members?" is a parallel multi-hop question, which can be directly broken down into Sub-question 1 "How many members are in LostAlone?" and Sub-question 2 "How many members are in Guster?".
+Sequential Multi-hop Question: The Sub-questions of sequential multi-hop question are dependent. If we want to generate Sub-question 2, we must first obtain the answer to Sub-question 1.
+For instance, "Girard city is located in a county with how many inhabitants?" is a sequential multi-hop question, the Sub-question 1 is "Which county is Girard city located in?". Before obtaining the Sub-questions 2 "How many inhabitants are there in Crawford County?", we must obtain the answer "Crawford County" to the Sub-question 1.
+Please identify the type for the given question based on the above definitions and examples.
+</Instruction>
+Given question:

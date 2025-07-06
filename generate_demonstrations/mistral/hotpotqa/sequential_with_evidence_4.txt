@@ -1,0 +1,63 @@
+<Instruction>
+Please imitate the following examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the given question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+<Example 1>
+Question: What is the birth date of the woman Paul McCartney was engaged to after Linda McCartney's death?
+ Sub-question 1: Who was Paul McCartney engaged to after Linda McCartney's death?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Paul McCartney was engaged to Heather Mills after Linda McCartney's death.
+Based on the evidence, we can obtain the answer to Sub-question 1: Heather Mills.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: What is the birth date of Heather Mills?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 1>
+<Example 2>
+Question: In what year was the college, at which Eric Heenan was educated, founded?
+ Sub-question 1: Which college was Eric Heenan educated at?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Eric Heenan is a Canadian actor who was educated at the University of Victoria in British Columbia, Canada.
+Based on the evidence, we can obtain the answer to Sub-question 1: University of Victoria.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: In what year was the University of Victoria founded?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 2>
+<Example 3>
+Question: Oliver Boot had a role in the Moliere-based film that was first performed in what year?
+ Sub-question 1: Which Moliere-based film did Oliver Boot have a role in?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Oliver Boot is an English actor who played the role of Alceste in the Moliere-based film "The Misanthrope".
+Based on the evidence, we can obtain the answer to Sub-question 1: The Misanthrope.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: In what year was The Misanthrope first performed?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 3>
+<Example 4>
+Question: What is the 2010 census of the city which has Fountain Hill, Pennsylvania as a suburb? 
+ Sub-question 1: Which city has Fountain Hill, Pennsylvania as a suburb?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Fountain Hill, Pennsylvania is a borough located in Lehigh County, Pennsylvania, United States. It is a suburb of Allentown, Pennsylvania.
+Based on the evidence, we can obtain the answer to Sub-question 1: Allentown, Pennsylvania.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: What was the population of Allentown, Pennsylvania according to the 2010 census?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 4>
+<Instruction>
+Please imitate the following examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the given question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+Given question:

@@ -1,0 +1,70 @@
+<Instruction>
+Please imitate the following examples to extract all questions from the given text.
+Please note that there should be no repeated questions in the output content.
+Please pay attention to keeping the output format consistent with the format of the output in the example.
+Here are some examples:
+<\Instruction>
+<Example 1>
+Text: To classify the given question, let's break it down into sub-questions:
+Sub-question 1: What is the majority religion of the area that became India?
+Sub-question 2: When was the country origin of Mizraab created in the Arabic dictionary?
+Sub-question 3: What is the meaning of the word that is the answer to Sub-question 1?
+To further decompose the question, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: The majority religion of the area that became India is Hinduism.
+Based on the evidence, we can obtain the answer of Sub-question 1: Hinduism.
+Based on the Answer of Sub-question 1, we can further generate the sub-question 2 as follows:
+Sub-question 2: When was the country origin of Mizraab created in the Arabic dictionary?
+To further decompose this question, we must first find the evidence and the answer of the Sub-question 2.
+Evidence of Sub-question 2: The country origin of Mizraab is not found in the Arabic dictionary.
+Based on the evidence, we can obtain the answer of Sub-question 2: Not found.
+Based on the Answer of Sub-question 2, we can further generate the sub-question 3 as follows:
+Sub-question 3: What is the meaning of the word Hinduism?
+Hence, this question is a Sequential Multi-hop question.
+Output: ['Question 1: What is the majority religion of the area that became India?', 'Question 2: When was the country origin of Mizraab created in the Arabic dictionary?', 'Question 3: What is the meaning of the word Hinduism?']
+<\Example 1>
+<Example 2>
+Text: Let's generate sub-question 1 first.
+Let's analyze the question.
+Sub-question 1: What trilogies are being referred to, the prequel and sequel ones?
+To determine this, we need additional information, so the question cannot be immediately broken down.
+Sub-question 2 (after first determining the answer of Sub-question 1): What were box office values of the Star Wars films in the prequel and/or sequel trilogy?
+Now, assuming we've figured out what are the two
+trilogies, we can, for example,
+Sub-question 3: What was the box office value of the Star Wars films in the prequel trilogy?
+Sub-question 4: What was the box office value of the Star Wars films in the sequel trilogy?
+We have two parallel paths of questions, so it's a parallel multi-hop question.
+Output: ['Question 1: What trilogies are being referred to, the prequel and sequel ones?', 'Question 2: What were box office values of the Star Wars films in the prequel and/or sequel trilogy?', 'Question 3: What was the box office value of the Star Wars films in the prequel trilogy?', 'Question 4: What was the box office value of the Star Wars films in the sequel trilogy?']
+</Example 2>
+<Example 3>
+Text: To classify the given question, let's break it down into sub-questions.
+Sub-question 1: What are the first five picks in the 1998 MLB draft?
+To further decompose this question, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: The first five picks in the 1998 MLB draft were Paul Wilson, Phil Nevin, Pat Burrell, Scott Williamson, and Corey Patterson.
+Based on the evidence, we can obtain the answer of Sub-question 1: Paul Wilson, Phil Nevin, Pat Burrell, Scott Williamson, and Corey Patterson.
+Based on the Answer of Sub-question 1, we can further generate the sub-question 2 as follows:
+Sub-question 2: What is the batting hand of Paul Wilson?
+Sub-question 3: What is the batting hand of Phil Nevin?
+Sub-question 4: What is the batting hand of Pat Burrell?
+Sub-question 5: What is the batting hand of Scott Williamson?
+Sub-question 6: What is the batting hand of Corey Patterson?
+These sub-questions are independent of each other, and the answer to Sub-question 1 is not needed to obtain the answers to the other sub-questions.
+Hence, this question is a parallel multi-hop question.
+Output: ['Question 1: What are the first five picks in the 1998 MLB draft?', 'Question 2: What is the batting hand of Paul Wilson?', 'Question 3: What is the batting hand of Phil Nevin?', 'Question 4: What is the batting hand of Pat Burrell?', 'Question 5: What is the batting hand of Scott Williamson?', 'Question 6: What is the batting hand of Corey Patterson?']
+</Example 3>
+<Example 4>
+Text: Sub-question 1: What is the dimension of each out of Jaguar I-Pace, Kia Telluride, Volkswagen ID.4, Hyundai Ioniq 5, and Kia EV9?
+To further decompose this question, we can generate sub-questions as follows:
+Sub-question 2: What is the dimension of the Jaguar I-Pace?
+Sub-question 3: What is the dimension of the Kia Telluride?
+Sub-question 4: What is the dimension of the Volkswagen ID.4?
+Sub-question 5: What is the dimension of the Hyundai Ioniq 5?
+Sub-question 6: What is the dimension of the Kia EV9?
+The question can be directly decomposed into independent sub-questions (sub-question 2 to sub-question 6). Hence, this question is a parallel multi-hop question.
+Output: ['Question 1: What is the dimension of each out of Jaguar I-Pace, Kia Telluride, Volkswagen ID.4, Hyundai Ioniq 5, and Kia EV9?', 'Question 2: What is the dimension of the Jaguar I-Pace?', 'Question 3: What is the dimension of the Kia Telluride?', 'Question 4: What is the dimension of the Volkswagen ID.4?', 'Question 5: What is the dimension of the Hyundai Ioniq 5?', 'Question 6: What is the dimension of the Kia EV9?']
+</Example 4>
+<Instruction>
+Please imitate the above examples to extract all questions from the given text.
+Please note that there should be no repeated questions in the output content.
+Please pay attention to keeping the output format consistent with the format of the output in the example.
+<\Instruction>
+Given text:

@@ -1,0 +1,64 @@
+<Instruction>
+Please imitate the following examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the given question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+<Example 1>
+Question: Lee Hwan-kyung debuted with a movie written by who?
+Sub-question 1: Which movie did Lee Hwan-kyung debut in?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Lee Hwan-kyung is a South Korean actress who made her debut in the 2010 romantic comedy film "A Moment to Remember" (감정의 날).
+Based on the evidence, we can obtain the answer to Sub-question 1: "A Moment to Remember".
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: Who wrote the movie "A Moment to Remember"?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 1>
+<Example 2>
+Question: In what year did the co-founder of the RedState group blog launch his english-language online magazine?
+Sub-question 1: Which co-founder of the RedState group blog is being referred to?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: RedState is a conservative American political blog founded by Glenn Beck and Erick Erickson.
+Based on the evidence, we can obtain the answer to Sub-question 1: Glenn Beck or Erick Erickson.
+Since the question does not specify which co-founder, we will consider both possibilities. However, for the purpose of decomposition, we will start with Glenn Beck as the primary co-founder.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: In what year did Glenn Beck launch his English-language online magazine?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 2>
+<Example 3>
+Question: What is the 2010 census of the city which has Fountain Hill, Pennsylvania as a suburb? 
+Sub-question 1: Which city has Fountain Hill, Pennsylvania as a suburb?
+To obtain the answer to Sub-question 2, we must first find the evidence and the answer to Sub-question 1.
+Evidence of Sub-question 1: Fountain Hill, Pennsylvania is a census-designated place (CDP) that is a suburb of Allentown, Pennsylvania.
+Based on the evidence, we can obtain the answer to Sub-question 1: Allentown, Pennsylvania.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: What is the 2010 census population of Allentown, Pennsylvania?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 3>
+<Example 4>
+Question: Pre-Madonna was a collection of demos by the singer who was a leading presence during the emergence of what network?
+Sub-question 1: Who was the singer of the collection "Pre-Madonna"?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: "Pre-Madonna" is a collection of demos by Madonna, the iconic singer.
+Based on the evidence, we can obtain the answer to Sub-question 1: Madonna.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: During the emergence of what network was Madonna a leading presence?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 4>
+<Instruction>
+Please imitate the following examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the given question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+Given question:

@@ -1,0 +1,47 @@
+<Instruction>
+Please imitate the following examples to generate the Sub-questions.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the original question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+<Example 1>
+Question: Who was born first, William Henry Goddard or Abdul-Basit Agouda?
+Sub-question 1: When was William Henry Goddard born?
+Sub-question 2: When was Abdul-Basit Agouda born?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 1>
+<Example 2>
+Question: Are Steven Wood and Jérôme Carcopino both from the same country?
+Sub-question 1: What country is Steven Wood from?
+Sub-question 2: What country is Jérôme Carcopino from?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 2>
+<Example 3>
+Question: Were both Dennis Schulp and Benito Masilevu, born in the same place?
+Sub-question 1: Where was Dennis Schulp born?
+Sub-question 2: Where was Benito Masilevu born?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 3>
+<Example 4>
+Question: Which film came out first, Bad Lieutenant or The Journalist?
+Sub-question 1: When was the film Bad Lieutenant released?
+Sub-question 2: When was the film The Journalist released?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 4>
+<Instruction>
+Please imitate the above examples to generate the Sub-questions.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the original question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+Given question:

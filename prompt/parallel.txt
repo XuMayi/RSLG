@@ -1,0 +1,47 @@
+<Instruction>
+Please imitate the following examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into sub-questions unrelated to the original question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+<Example 1>
+Question: Did LostAlone and Guster have the same number of members?
+Sub-question 1: How many members are in LostAlone?
+Sub-question 2: How many members are in Guster?
+The Sub-questions 1 and 2 are independent.
+Furthermore, answering Sub-question 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 1>
+<Example 2>
+Question: Were Pavel Urysohn and Leonid Levin known for the same type of work?
+Sub-question 1: What type of work was Pavel Urysohn known for?
+Sub-question 2: What type of work was Leonid Levin known for?
+The Sub-questions 1 and 2 are independent.
+Furthermore, answering Sub-question 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 2>
+<Example 3>
+Question: Which magazine was started first Arthur's Magazine or First for Women?
+Sub-question 1: When was Arthur's Magazine started?
+Sub-question 2: When was First for Women started?
+The Sub-questions 1 and 2 are independent.
+Furthermore, answering Sub-question 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 3>
+<Example 4>
+Question: Who was born first, Pablo Trapero or Aleksander Ford?
+Sub-question 1: When was Pablo Trapero born?
+Sub-question 2: When was Aleksander Ford born?
+The Sub-questions 1 and 2 are independent.
+Furthermore, answering Sub-question 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 4>
+<Instruction>
+Please imitate the following examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into sub-questions unrelated to the original question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+Given question:

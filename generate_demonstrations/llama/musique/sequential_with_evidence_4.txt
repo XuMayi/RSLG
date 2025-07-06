@@ -1,0 +1,64 @@
+<Instruction>
+Please imitate the following examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the given question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+<Example 1>
+Question: Who founded the company known for manufacturing the LINC-8?
+Sub-question 1: Which company is known for manufacturing the LINC-8?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: The LINC-8 is a minicomputer developed by Digital Equipment Corporation (DEC).
+Based on the evidence, we can obtain the answer to Sub-question 1: Digital Equipment Corporation (DEC).
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: Who founded Digital Equipment Corporation (DEC)?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 1>
+<Example 2>
+Question: What is the population of Luther Burbank's birthplace?
+Sub-question 1: Where was Luther Burbank born?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Luther Burbank was born in Lancaster, Massachusetts.
+Based on the evidence, we can obtain the answer to Sub-question 1: Lancaster, Massachusetts.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: What is the population of Lancaster, Massachusetts?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 2>
+<Example 3>
+Question: Who is the mom of the composer of Face to the Sky?
+To decompose the given question, we will follow the guidelines and the examples provided.
+Sub-question 1: Who is the composer of Face to the Sky?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Face to the Sky is a song by the British singer-songwriter, James Bay.
+Based on the evidence, we can obtain the answer to Sub-question 1: James Bay.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: Who is the mom of James Bay?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 3>
+<Example 4>
+Question: What is the population of the city containing Chu Van An High School?
+Sub-question 1: Which city contains Chu Van An High School?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Chu Van An High School is a high school in Hanoi, Vietnam.
+Based on the evidence, we can obtain the answer to Sub-question 1: Hanoi.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: What is the population of Hanoi?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 4>
+<Instruction>
+Please imitate the following examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the given question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+Given question:

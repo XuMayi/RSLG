@@ -1,0 +1,123 @@
+<Instruction>
+Definition of Sub-question: A Sub-question is a question that must be answered in the process of finding the answer to its parent question. In other words, obtaining the answer to the Sub-question is a necessary condition for obtaining the answer to the parent question. Note that if question A and question B are highly related, but obtaining the answer to question A is not necessary for obtaining the answer to question B, then question A is not a Sub-question of question B. For example, question A "What is the city of Incheon?" and question B "What is the symbol of Incheon?" are very related, but the answer to question A is not necessary for obtaining the answer to question B, so question A is not a Sub-question of question B.
+There are three types of questions, and their definitions are as follows:
+One-hop Question: The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+For instance, "Kahibah FC is based is what country?" is a one-hop question since it cannot be broken down into multiple smaller Sub-questions.
+Parallel Multi-hop Question: The question includes multiple independent Sub-questions, so it can be directly broken down into multiple independent Sub-questions.
+For instance, "Did LostAlone and Guster have the same number of members?" is a parallel multi-hop question, which can be directly broken down into Sub-question 1 "How many members are in LostAlone?" and Sub-question 2 "How many members are in Guster?".
+Sequential Multi-hop Question: The Sub-questions of sequential multi-hop question are dependent. If we want to generate Sub-question 2, we must first obtain the answer to Sub-question 1.
+For instance, "Girard city is located in a county with how many inhabitants?" is a sequential multi-hop question, the Sub-question 1 is "Which county is Girard city located in?". Before obtaining the Sub-questions 2 "How many inhabitants are there in Crawford County?", we must obtain the answer "Crawford County" to the Sub-question 1.
+Please identify the type for the given question based on the above definitions and the following examples.
+</Instruction>
+<Example 1>
+Question: Did LostAlone and Guster have the same number of members?
+Sub-question 1: How many members are in LostAlone?
+Sub-question 2: How many members are in Guster?
+The Sub-questions 1 and 2 are independent.
+Furthermore, answering Sub-questions 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 1>
+<Example 2>
+Question: The Dutch-Belgian television series that \"House of Anubis\" was based on first aired in what year?
+Sub-question 1: Which Dutch-Belgian television series is based on the House of Anubis？
+To obtain the Sub-question 2, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: House of Anubis is a mystery television series developed for Nickelodeon based on the Dutch-Belgian television series "Het Huis Anubis".
+Based on the evidence, we can obtain the answer to Sub-question 1: Het Huis Anubis.
+Based on the answer to Sub-question 1, we can further generate the Sub-question 2 as follows:
+Sub-question 2: What year did Het Huis Anubis first aired?
+The Sub-questions 1 and 2 are dependent since we must first obtain the answer to Sub-question 1 before generating the Sub-question 2.
+Furthermore, answering Sub-questions 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 2>
+<Example 3>
+Question: Kahibah FC is based is what country?
+The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+Hence, this question is a one-hop question.
+</Example 3>
+<Example 4>
+Question: Were Pavel Urysohn and Leonid Levin known for the same type of work?
+Sub-question 1: What type of work was Pavel Urysohn known for?
+Sub-question 2: What type of work was Leonid Levin known for?
+The Sub-questions 1 and 2 are independent.
+Furthermore, answering Sub-questions 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 4>
+<Example 5>
+Question: Tata Movus is what type of high-roof vehicle?
+The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+Hence, this question is a one-hop question.
+</Example 5>
+<Example 6>
+Question: Which magazine was started first Arthur's Magazine or First for Women?
+Sub-question 1: When was Arthur's Magazine started?
+Sub-question 2: When was First for Women started?
+The Sub-questions 1 and 2 are independent.
+Furthermore, answering Sub-questions 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 6>
+<Example 7>
+Question: Girard city is located in a county with how many inhabitants?
+Sub-question 1: Which county is Girard city located in?
+To obtain the Sub-question 2, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Girard is a city in and the county seat of Crawford County, Kansas, United States.
+Based on the evidence, we can obtain the answer to Sub-question 1: Crawford County.
+Based on the answer to Sub-question 1, we can further generate the Sub-question 2 as follows:
+Sub-question 2: How many inhabitants are there in Crawford County?
+The Sub-question 1 and 2 are dependent since we must first obtain the answer to Sub-question 1 before generating the Sub-question 2.
+Furthermore, answering Sub-questions 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 7>
+<Example 8>
+Question: Harper's Mansion is located in a village that is located along what highway?
+Sub-question 1: Which village is Harper's Mansion located in?
+To obtain the Sub-question 2, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Harper’s Mansion is a historic homestead in Berrima, New South Wales.
+Based on the evidence, we can obtain the answer to Sub-question 1: Berrima village.
+Based on the answer to Sub-question 1, we can further generate the Sub-question 2 as follows:
+Sub-question 2: Which highway is Berrima village located along?
+The Sub-question 1 and 2 are dependent since we must first obtain the answer to Sub-question 1 before generating the Sub-question 2.
+Furthermore, answering Sub-questions 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 8>
+<Example 9>
+Question: Where is the birthplace of "Babe" Hardy?
+The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+Hence, this question is a one-hop question.
+</Example 9>
+<Example 10>
+Question: Which state does the drug stores, of which the CEO is Warren Bryant, are located?
+Sub-question 1: Which drug store's CEO is Warren Bryant?
+To obtain the Sub-question 2, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Warren Bryant was the CEO of Longs Drugs Store Corporation out of California prior to the retail chain's acquisition by CVS/Caremark.
+Based on the evidence, we can obtain the answer to Sub-question 1: Longs Drugs Store Corporation.
+Based on the answer to Sub-question 1, we can further generate the Sub-question 2 as follows:
+Sub-question 2: Which state does the Longs Drugs Store Corporation locates in?
+The Sub-question 1 and 2 are dependent since we must first obtain the answer to Sub-question 1 before generating the Sub-question 2.
+Furthermore, answering Sub-questions 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 10>
+<Example 11>
+Question: Who created the studio album Big Fish Theory?
+The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+Hence, this question is a one-hop question.
+</Example 11>
+<Example 12>
+Question: Who was born first, Pablo Trapero or Aleksander Ford?
+Sub-question 1: When was Pablo Trapero born?
+Sub-question 2: When was Aleksander Ford born?
+The Sub-question 1 and 2 are independent.
+Furthermore, answering Sub-questions 1 and 2 is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 12>
+<Instruction>
+Definition of Sub-question: A Sub-question is a question that must be answered in the process of finding the answer to its parent question. In other words, obtaining the answer to the Sub-question is a necessary condition for obtaining the answer to the parent question. Note that if question A and question B are highly related, but obtaining the answer to question A is not necessary for obtaining the answer to question B, then question A is not a Sub-question of question B. For example, question A "What is the city of Incheon?" and question B "What is the symbol of Incheon?" are very related, but the answer to question A is not necessary for obtaining the answer to question B, so question A is not a Sub-question of question B.
+There are three types of questions, and their definitions are as follows:
+One-hop Question: The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+For instance, "Kahibah FC is based is what country?" is a one-hop question since it cannot be broken down into multiple smaller Sub-questions.
+Parallel Multi-hop Question: The question includes multiple independent Sub-questions, so it can be directly broken down into multiple independent Sub-questions.
+For instance, "Did LostAlone and Guster have the same number of members?" is a parallel multi-hop question, which can be directly broken down into Sub-question 1 "How many members are in LostAlone?" and Sub-question 2 "How many members are in Guster?".
+Sequential Multi-hop Question: The Sub-questions of sequential multi-hop question are dependent. If we want to generate Sub-question 2, we must first obtain the answer to Sub-question 1.
+For instance, "Girard city is located in a county with how many inhabitants?" is a sequential multi-hop question, the Sub-question 1 is "Which county is Girard city located in?". Before obtaining the Sub-questions 2 "How many inhabitants are there in Crawford County?", we must obtain the answer "Crawford County" to the Sub-question 1.
+Please identify the type for the given question based on the above definitions and examples.
+</Instruction>
+Given question:

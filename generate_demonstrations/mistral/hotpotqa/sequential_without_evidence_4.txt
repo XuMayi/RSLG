@@ -1,0 +1,43 @@
+<Instruction>
+Please imitate the following examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the given question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+<Example 1>
+Question: What is the birth date of the woman Paul McCartney was engaged to after Linda McCartney's death?
+Sub-question 1: Who was Paul McCartney engaged to after Linda McCartney's death?
+Answer of Sub-question 1: Heather Mills.
+Based on the Answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: What is the birth date of Heather Mills?
+</Example 1>
+<Example 2>
+Question: In what year was the college, at which Eric Heenan was educated, founded?
+Sub-question 1: Which college was Eric Heenan educated at?
+Answer of Sub-question 1: University of Victoria.
+Based on the Answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: In what year was the University of Victoria founded?
+</Example 2>
+<Example 3>
+Question: Oliver Boot had a role in the Moliere-based film that was first performed in what year?
+Sub-question 1: Which Moliere-based film did Oliver Boot have a role in?
+Answer of Sub-question 1: The Misanthrope.
+Based on the Answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: In what year was The Misanthrope first performed?
+</Example 3>
+<Example 4>
+Question: What is the 2010 census of the city which has Fountain Hill, Pennsylvania as a suburb?
+Sub-question 1: Which city has Fountain Hill, Pennsylvania as a suburb?
+Answer of Sub-question 1: Allentown, Pennsylvania.
+Based on the Answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: What was the population of Allentown, Pennsylvania according to the 2010 census?
+</Example 4>
+<Instruction>
+Please imitate the following examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the given question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+Given question:

@@ -1,0 +1,43 @@
+<Instruction>
+Please imitate the following examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the given question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+<Example 1>
+Question: Lee Hwan-kyung debuted with a movie written by who?
+Sub-question 1: Which movie did Lee Hwan-kyung debut in?
+Answer of Sub-question 1: "A Moment to Remember".
+Based on the Answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: Who wrote the movie "A Moment to Remember"?
+</Example 1>
+<Example 2>
+Question: In what year did the co-founder of the RedState group blog launch his english-language online magazine?
+Sub-question 1: Which co-founder of the RedState group blog is being referred to?
+Answer of Sub-question 1: Glenn Beck or Erick Erickson.
+Based on the Answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: In what year did Glenn Beck launch his English-language online magazine?
+</Example 2>
+<Example 3>
+Question: What is the 2010 census of the city which has Fountain Hill, Pennsylvania as a suburb?
+Sub-question 1: Which city has Fountain Hill, Pennsylvania as a suburb?
+Answer of Sub-question 1: Allentown, Pennsylvania.
+Based on the Answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: What is the 2010 census population of Allentown, Pennsylvania?
+</Example 3>
+<Example 4>
+Question: Pre-Madonna was a collection of demos by the singer who was a leading presence during the emergence of what network?
+Sub-question 1: Who was the singer of the collection "Pre-Madonna"?
+Answer of Sub-question 1: Madonna.
+Based on the Answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: During the emergence of what network was Madonna a leading presence?
+</Example 4>
+<Instruction>
+Please imitate the following examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the given question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+Given question:

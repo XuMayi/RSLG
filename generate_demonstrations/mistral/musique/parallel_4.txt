@@ -1,0 +1,47 @@
+<Instruction>
+Please imitate the following examples to generate the Sub-questions.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the original question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+<Example 1>
+Question: Who sang Meet Me in Montana with the performer of I Only wanted You?
+Sub-question 1: Who sang Meet Me in Montana?
+Sub-question 2: Who sang I Only Wanted You?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 1>
+<Example 2>
+Question: Who was the president of the body that petitioned the king of England to recognize the rights of colonists when the declaration of independence was adopted?
+Sub-question 1: Who was the president of the Continental Congress when the Declaration of Independence was adopted?
+Sub-question 2: Which body petitioned the king of England to recognize the rights of colonists?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 2>
+<Example 3>
+Question: What was the record label of the singer of Don't Let Me Be Misunderstood?
+Sub-question 1: Who is the singer of Don't Let Me Be Misunderstood?
+Sub-question 2: What is the record label of the identified singer?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 3>
+<Example 4>
+Question: How many lives were lost in the bombing of Nagasaki and the birthplace of Marii Hasegawa?
+Sub-question 1: How many lives were lost in the bombing of Nagasaki?
+Sub-question 2: Where was Marii Hasegawa born?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 4>
+<Instruction>
+Please imitate the above examples to generate the Sub-questions.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the original question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+Given question:

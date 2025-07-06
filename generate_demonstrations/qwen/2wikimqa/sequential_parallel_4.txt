@@ -1,0 +1,123 @@
+<Instruction>
+Definition of Sub-question: A Sub-question is a question that must be answered in the process of finding the answer to its parent question. In other words, obtaining the answer to the Sub-question is a necessary condition for obtaining the answer to the parent question. Note that if question A and question B are highly related, but obtaining the answer to question A is not necessary for obtaining the answer to question B, then question A is not a Sub-question of question B. For example, question A "What is the city of Incheon?" and question B "What is the symbol of Incheon?" are very related, but the answer to question A is not necessary for obtaining the answer to question B, so question A is not a Sub-question of question B.
+There are three types of questions, and their definitions are as follows:
+One-hop Question: The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+For instance, "Kahibah FC is based is what country?" is a one-hop question since it cannot be broken down into multiple smaller Sub-questions.
+Parallel Multi-hop Question: The question includes multiple independent Sub-questions, so it can be directly broken down into multiple independent Sub-questions.
+For instance, "Did LostAlone and Guster have the same number of members?" is a parallel multi-hop question, which can be directly broken down into Sub-question 1 "How many members are in LostAlone?" and Sub-question 2 "How many members are in Guster?".
+Sequential Multi-hop Question: The Sub-questions of sequential multi-hop question are dependent. If we want to generate Sub-question 2, we must first obtain the answer to Sub-question 1.
+For instance, "Girard city is located in a county with how many inhabitants?" is a sequential multi-hop question, the Sub-question 1 is "Which county is Girard city located in?". Before obtaining the Sub-questions 2 "How many inhabitants are there in Crawford County?", we must obtain the answer "Crawford County" to the Sub-question 1.
+Please identify the type for the given question based on the above definitions and the following examples.
+</Instruction>
+<Example 1>
+Question:  In which country is Cham Ol Obeyd located?
+The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+Hence, this question is a one-hop question.
+</Example 1>
+<Example 2>
+Question: Who was born first, William Henry Goddard or Abdul-Basit Agouda?
+Sub-question 1: When was William Henry Goddard born?
+Sub-question 2: When was Abdul-Basit Agouda born?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 2>
+<Example 3>
+Question:  What is the date of birth of Robert Florey?
+The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+Hence, this question is a one-hop question.
+</Example 3>
+<Example 4>
+Question:  What country is Naphtali Hirz Wessely from?
+The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+Hence, this question is a one-hop question.
+</Example 4>
+<Example 5>
+Question: Are Damned by Dawn and Hollywood Barn Dance both from the same country?
+Sub-question 1: What country is Damned by Dawn from?
+Sub-question 2: What country is Hollywood Barn Dance from?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 5>
+<Example 6>
+Question: Who is the child of the performer of song Answer Me, My Love?
+Sub-question 1: Who is the performer of the song "Answer Me, My Love"?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: The song "Answer Me, My Love" is performed by the South Korean singer IU.
+Based on the evidence, we can obtain the answer to Sub-question 1: IU.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: Who is the child of IU?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 6>
+<Example 7>
+Question:  Who is the director of the film Brigadoon?
+The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+Hence, this question is a one-hop question.
+</Example 7>
+<Example 8>
+Question: Where was the place of death of the director of film The Woman Who Did Not Care?
+Sub-question 1: Who is the director of the film "The Woman Who Did Not Care"?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: The director of the film "The Woman Who Did Not Care" is Rainer Werner Fassbinder.
+Based on the evidence, we can obtain the answer to Sub-question 1: Rainer Werner Fassbinder.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: Where was the place of death of Rainer Werner Fassbinder?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 8>
+<Example 9>
+Question: Are Joaquín París Ricaurte and Jun Lana both from the same country?
+Sub-question 1: What country is Joaquín París Ricaurte from?
+Sub-question 2: What country is Jun Lana from?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 9>
+<Example 10>
+Question: What is the date of death of Princess Florestine Of Monaco's father?
+Sub-question 1: Who is Princess Florestine of Monaco's father?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Princess Florestine of Monaco is the daughter of Prince Rainier III of Monaco and Princess Grace Kelly.
+Based on the evidence, we can obtain the answer to Sub-question 1: Prince Rainier III of Monaco.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: What is the date of death of Prince Rainier III of Monaco?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 10>
+<Example 11>
+Question: What is the date of death of the director of film Our Lady Of Sorrows (Film)?
+Sub-question 1: Who is the director of the film "Our Lady Of Sorrows"?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: The film "Our Lady Of Sorrows" was directed by Robert C. Jones.
+Based on the evidence, we can obtain the answer to Sub-question 1: Robert C. Jones.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: What is the date of death of Robert C. Jones?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 11>
+<Example 12>
+Question: Which film came out first, Bad Lieutenant or The Journalist?
+Sub-question 1: When was the film Bad Lieutenant released?
+Sub-question 2: When was the film The Journalist released?
+These Sub-questions are independent.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a parallel multi-hop question.
+</Example 12>
+<Instruction>
+Definition of Sub-question: A Sub-question is a question that must be answered in the process of finding the answer to its parent question. In other words, obtaining the answer to the Sub-question is a necessary condition for obtaining the answer to the parent question. Note that if question A and question B are highly related, but obtaining the answer to question A is not necessary for obtaining the answer to question B, then question A is not a Sub-question of question B. For example, question A "What is the city of Incheon?" and question B "What is the symbol of Incheon?" are very related, but the answer to question A is not necessary for obtaining the answer to question B, so question A is not a Sub-question of question B.
+There are three types of questions, and their definitions are as follows:
+One-hop Question: The question is already a minimal question unit and cannot be broken down into multiple smaller Sub-questions.
+For instance, "Kahibah FC is based is what country?" is a one-hop question since it cannot be broken down into multiple smaller Sub-questions.
+Parallel Multi-hop Question: The question includes multiple independent Sub-questions, so it can be directly broken down into multiple independent Sub-questions.
+For instance, "Did LostAlone and Guster have the same number of members?" is a parallel multi-hop question, which can be directly broken down into Sub-question 1 "How many members are in LostAlone?" and Sub-question 2 "How many members are in Guster?".
+Sequential Multi-hop Question: The Sub-questions of sequential multi-hop question are dependent. If we want to generate Sub-question 2, we must first obtain the answer to Sub-question 1.
+For instance, "Girard city is located in a county with how many inhabitants?" is a sequential multi-hop question, the Sub-question 1 is "Which county is Girard city located in?". Before obtaining the Sub-questions 2 "How many inhabitants are there in Crawford County?", we must obtain the answer "Crawford County" to the Sub-question 1.
+Please identify the type for the given question based on the above definitions and examples.
+</Instruction>
+Given question:

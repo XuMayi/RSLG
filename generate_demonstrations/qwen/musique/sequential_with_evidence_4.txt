@@ -1,0 +1,62 @@
+<Instruction>
+Please imitate the following examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the given question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+<Example 1>
+Question: What is the population of Luther Burbank's birthplace?
+Sub-question 1: Which city is Luther Burbank's birthplace?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: Luther Burbank was born in Lancaster, California.
+Based on the evidence, we can obtain the answer to Sub-question 1: Lancaster.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: What is the population of Lancaster?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 1>
+<Example 2>
+Question: When did the person who said "Child is the father of man" live?
+Sub-question 1: Who said "Child is the father of man"?
+To obtain the answer to Sub-question 1, we need to identify the person who is attributed with this quote.
+Evidence of Sub-question 1: The quote "Child is the father of man" is attributed to William Wordsworth, a prominent English poet.
+Based on the evidence, we can obtain the answer to Sub-question 1: William Wordsworth.
+The rest Sub-questions: When did William Wordsworth live?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 2>
+<Example 3>
+Question: Who is the manufacturer of the aircraft with 747 in its name by the Chicago-headquartered company that was once in Seattle?
+Sub-question 1: Which Chicago-headquartered company that was once in Seattle manufactures an aircraft with 747 in its name?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: The company that was once in Seattle and is now headquartered in Chicago is Boeing, which manufactures the 747 aircraft.
+Based on the evidence, we can obtain the answer to Sub-question 1: Boeing.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: Who is the manufacturer of the 747 aircraft?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 3>
+<Example 4>
+Question: Who did the singer of Wrecking Ball play in Hannah Montana?
+Sub-question 1: Who is the singer of the song "Wrecking Ball"?
+To obtain the rest Sub-questions, we must first find the evidence and the answer of the Sub-question 1.
+Evidence of Sub-question 1: The song "Wrecking Ball" was performed by Miley Cyrus.
+Based on the evidence, we can obtain the answer to Sub-question 1: Miley Cyrus.
+Based on the answer to Sub-question 1, we can further generate the rest Sub-questions as follows:
+The rest Sub-questions: In the TV show Hannah Montana, who did Miley Cyrus play?
+These Sub-questions are dependent since we must first obtain the answer to Sub-question 1 before generating the rest Sub-questions.
+Furthermore, answering these Sub-questions is necessary for obtaining the final answer to the parent question.
+Hence, this question is a sequential multi-hop question.
+</Example 4>
+<Instruction>
+Please imitate the following examples to decompose the given question.
+Please note that during the decomposition process, you must strictly adhere to the following three guidelines:
+Guideline 1: Do not decompose into Sub-questions unrelated to the given question.
+Guideline 2: Do not expand the scope of the question.
+Guideline 3: Please ensure each Sub-question is self-contained and contextually clear. Avoid using ambiguous references or placeholders that rely on information outside the specific Sub-question. For example, in Sub-question "What is the composer of the aforementioned movie?", you should replace "the aforementioned movie" with the actual name of the movie it represents.
+</Instruction>
+Given question:
